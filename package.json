@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^1.6.8",
+    "gh-pages": "^2.2.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "0.9.5",
