@@ -1,0 +1,41 @@
+
+@font-face{
+  font-family: "Montserrat";
+  src: local('Montserrat'),url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "Montserrat-Medium";
+  src: local('Montserrat'),url('./assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "Montserrat-Bold";
+  src: local('Montserrat'),url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "Nunito";
+  src: local('Nunito'),url('./assets/fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "Nunito-Bold";
+  src: local('Nunito'),url('./assets/fonts/Nunito-Bold.ttf') format('truetype');
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat';
+  background-color: #FAFAFA;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+

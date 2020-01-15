@@ -1,0 +1,148 @@
+div.sidenav-container{
+    min-width: 250px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #ffffff;
+    /* background-color: #6A1B9A; */
+    border-right: 3px solid #993366;
+}
+
+div.sidenav-container > div.help-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid black;
+    background-color: rgba(44,62,80 ,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.sidenav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.sidenav-logo > h3{
+    color: rgba(103,58,183,1);
+    font-size: 1.3em;
+    font-family: 'Montserrat-Bold';
+}
+
+div.sidenav-logo > p{
+    color: rgba(103,58,183,1);
+    font-size: 0.8em;
+    font-weight: 600;
+    border-bottom: 3px solid #993366;
+    width: 50%;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+div.sidenav-links{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+    overflow: scroll;
+    overflow-x: hidden;
+    /* flex: 1; */
+}
+
+
+
+div.sidenav-links > button{
+    border: none;
+    /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); */
+    padding: 20px 15px;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+    color: #993366;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    transition: all 0.2s ;
+    outline: none;
+    width: 100%;
+    background: none;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+div.sidenav-links > button:disabled{
+    background: #ff3366;
+    box-shadow: none;
+    color: #fafafa;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 600;
+}
+
+/* div.sidenav-links > button:disabled:hover{
+    background: #3F51B5;
+    box-shadow: none;
+    color: #fafafa;
+} */
+
+div.sidenav-actions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+div.sidenav-generate > button{
+    border: none;
+    background: #993366;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 0.6em;
+    
+}
+
+
+div.sidenav-help > button{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 10px;
+    color: rgba(103,58,183,1);;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 0.6em;
+    background: none;
+    
+}
+
+div.sidenav-previous > button{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 0.6em;
+    color: white;
+    background:rgba(52,73,94 ,1);
+}
+
+div.sidenav-generate > button:hover ,div.sidenav-previous > button:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: white;
+    background:rgba(52,73,94 ,1);
+}

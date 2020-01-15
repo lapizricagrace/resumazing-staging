@@ -1,0 +1,427 @@
+div.form-generator-container{
+    flex: 1;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction:column; */
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.form-generator-container > div.form-header{
+    width: 100%;
+}
+
+div.form-header > h2{
+    font-size: 1.5em;
+    color: #ff3366;
+}
+
+div.form-generator-container > div.form-list-container{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+div.form-generator-container > div.form-list-container > div.form-list-wrapper{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+
+
+
+div.form-generator-container > div.form-list-container > div.form-list-wrapper > table{
+    flex: 1;
+    text-overflow: ellipsis;
+}
+
+div.form-generator-container > div.form-list-container > div.form-list-wrapper > table > tr > th{
+    font-size: 0.7em;
+    text-overflow: clip;
+
+}
+
+div.form-generator-container > div.form-list-container > div.form-list-wrapper > table > tr{
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.9em;
+}
+
+div.form-generator-container > div.form-list-container > div.form-list-wrapper > table > tr > td{
+    max-width: 55px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div.form-generator-container > div.form-list-container > div.form-list-wrapper > table > tr > td > button{
+    background-color: rgba(192,57,43 ,1);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+div.form-generator-container > div.form-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* overflow-y:scroll;
+    overflow-x: hidden;
+    max-height: 80vh; */
+    width: 100%;
+}
+
+div.form-container > div.form-group{
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    /* width: 100%; */
+}
+
+div.form-container > div.form-group.fullwidth{
+    width: 85%;
+}
+
+div.form-container > div.form-group.fullwidth > label{
+    width: 100%;
+}
+
+div.form-container > div.form-group.fullwidth > input{
+    width: 100%;
+}
+
+div.form-container > div.form-group.label-only{
+    /* flex: 1; */
+    width: 100%;
+}
+
+div.form-container > div.form-group.label-only > label{
+    /* flex: 1; */
+    text-align: center;
+    font-size: 1em;
+    color: #7B1FA2;
+}
+
+div.form-container > div.form-group > label{
+    /* flex: 1; */
+    text-align: left;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgba(52,73,94 ,1);
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.6em;
+}
+
+
+
+
+div.form-group > input {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: border-bottom 0.5s;
+    font-weight: 600;
+    color: #757575;
+    font-family: 'Nunito';
+    width: 230px;
+}
+
+div.form-group > input:focus{
+    border-bottom: 3px solid #7B1FA2;
+}
+
+
+div.form-group > input::placeholder{
+    color: #8D6E63;
+    font-family: 'Nunito';
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+div.form-group > textarea {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: border-bottom 0.5s;
+    font-weight: 600;
+    color: #757575;
+    font-family: 'Nunito';
+    width: 450px;
+    resize: none;
+}
+
+div.form-group > textarea:focus{
+    border-bottom: 3px solid #7B1FA2;
+}
+
+
+div.form-group > textarea::placeholder{
+    color: #8D6E63;
+    font-family: 'Nunito';
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+/*Multilist*/
+
+div.form-container > div.form-group.multilist{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 100%;
+}
+
+div.form-container > div.form-group.multilist.subform{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 10%;
+    align-self: baseline;
+}
+
+div.form-group.multilist > div.multilist-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.fullwidth{
+    width: 90%;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.fullwidth > textarea,
+div.form-group.multilist > div.multilist-container > div.multilist-group.fullwidth > input
+{
+    width: auto;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.label-only{
+    /* flex: 1; */
+    width: 100%;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.label-only > label{
+    /* flex: 1; */
+    text-align: center;
+    font-size: 1.2em;
+    color: #7B1FA2;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > label{
+    text-align: left;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgba(52,73,94 ,1);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > textarea,
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > input
+{
+    width: 100%;
+    resize: none;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > input {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: border-bottom 0.5s;
+    font-weight: 600;
+    color: #757575;
+    font-family: 'Nunito';
+    flex: 1;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > input:focus{
+    border-bottom: 3px solid #7B1FA2;
+}
+
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > input::placeholder{
+    color: #8D6E63;
+    font-family: 'Nunito';
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > textarea {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: border-bottom 0.5s;
+    font-weight: 600;
+    color: #757575;
+    font-family: 'Nunito';
+    flex: 1;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > textarea:focus{
+    border-bottom: 3px solid #7B1FA2;
+}
+
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.sub > div.sub-group > div.sub-group-form > textarea::placeholder{
+    color: #8D6E63;
+    font-family: 'Nunito';
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.title > label {
+    flex: 1;
+    text-align: left;
+    font-size: 0.8em;
+    color: rgba(52,73,94 ,1);
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.title > input {
+    padding: 10px;
+    font-size: 1em;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: border-bottom 0.5s;
+    font-weight: 600;
+    color: #757575;
+    font-family: 'Nunito';
+    width: 350px;
+    flex: 1;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.title > input:focus{
+    border-bottom: 3px solid #7B1FA2;
+}
+
+
+div.form-group.multilist > div.multilist-container > div.multilist-group.title > input::placeholder{
+    color: #8D6E63;
+    font-family: 'Nunito';
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9em;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group > label {
+    text-align: left;
+    flex: 1;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgba(52,73,94 ,1);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group > input {
+    padding: 10px;
+    font-size: 0.9em;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: border-bottom 0.5s;
+    font-weight: 600;
+    color: #757575;
+    font-family: 'Nunito';
+    width: 230px;
+    flex: 1;
+}
+
+div.form-group.multilist > div.multilist-container > div.multilist-group > input:focus{
+    border-bottom: 3px solid #7B1FA2;
+}
+
+
+div.form-group.multilist > div.multilist-container > div.multilist-group > input::placeholder{
+    color: #8D6E63;
+    font-family: 'Nunito';
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9em;
+}

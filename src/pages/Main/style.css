@@ -1,0 +1,227 @@
+div.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+div.main-container > div.about-us-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid black;
+    background-color: rgba(44,62,80 ,0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.main-container > div.about-us-container > button{
+    background-color: rgba(192,57,43 ,1);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: #fafafa;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fafafa;
+}
+
+
+/*Main Body*/
+div.main-body{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    
+}
+
+div.main-body > div.left, div.main-body > div.right{
+    flex: 1;
+    height: 100%;
+}
+
+div.right {
+    background: url('./../../assets/images/main_bg.png') no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*LEFT*/
+
+div.main-body > div.left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.left > .header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+div.left > .header > h1{
+    font-size: 4.5em;
+    font-weight: 900;
+    color: rgba(103,58,183,1);
+    text-shadow: 1px 0.5px 2px #b1b1b1;
+    font-family: 'Montserrat-Medium';
+}
+
+/*Main Body*/
+
+div.left > .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex : 1;
+    width: 100%;
+}
+
+div.left > .body > div.previous-btn > button{
+    border: none;
+    background: #993366;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 0.8em;
+}
+
+div.left > div.body > div.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+div.left > div.body > div.templates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+div.choices > button ,div.templates > button{
+    border: none;
+    background: #ff3366;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 10px;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 0.8em;
+    
+}
+
+div.choices > button#json{
+    border: none;
+    background: #993366;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    margin: 10px;
+    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 0.8em;
+    
+}
+
+div.choices > button#json:hover{
+    box-shadow: 0 3px 6px rgba(153,51,102,0.16), 0 3px 6px rgba(153,51,102,0.23);
+    color: white;
+}
+
+
+div.choices > button:hover ,div.templates > button:hover{
+    box-shadow: 0 3px 6px rgba(255,51,102,0.16), 0 3px 6px rgba(255,51,102,0.23);
+    color: white;
+}
+
+/* div.choices > button:nth-child(1){
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+    color: #616161;
+} */
+
+/*Main Footer*/
+div.main-footer{
+    width: 100%;
+    background-color: #FAFAFA;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.main-footer > h5{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(97,97,97 ,1);
+    font-size: 0.7em;
+}
+
+div.main-footer > button{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(97,97,97 ,1);
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    text-decoration: underline;
+}
+
+
+
+@keyframes fadeIn{
+  
+    from{
+      display: none;
+      opacity: 0;
+      margin-bottom : -500px;
+    }
+  
+    to{
+      display: flex;
+      opacity: 1;
+      margin-bottom : 0px;
+    }
+  
+  }

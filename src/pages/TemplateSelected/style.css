@@ -1,0 +1,23 @@
+div.template-container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.template-form,div.template-preview{
+    flex: 1;
+}
+
+div.template-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
