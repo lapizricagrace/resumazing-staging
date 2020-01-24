@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
         color : 'gray'
     },
     workCompanyName : {
-        fontSize : '14pt',
+        fontSize : '12pt',
         // fontFamily : 'Arial-Bold',
         color : 'gray'
     },
@@ -247,10 +247,10 @@ class General extends Component {
                                             const { level, school_name, degree, major, school_year, gpa, school_location } = mapper
                                             return (
                                                 <View key={key} style={[styles.othersInsideTextContainer,{flexDirection : 'column', marginTop : '10pt'}]}>
-                                                    <Text style={{textDecoration : 'underline',fontSize : '14pt', fontFamily : 'Arial-Bold', width : '100%'}}>{level}</Text>
-                                                    <Text style={{fontSize : '14pt', width : '100%'}}>{school_name}</Text>
+                                                    <Text style={{textDecoration : 'underline',fontSize : '12pt', fontFamily : 'Arial-Bold', width : '100%'}}>{level}</Text>
+                                                    <Text style={{fontSize : '12pt', width : '100%'}}>{school_name}</Text>
                                                     <View style={{flexDirection : 'row', width : '100%'}}>
-                                                        <Text style={{fontSize : '14pt'}}>{degree} {major !== '' ? `in ${major}` : ''}</Text>
+                                                        <Text style={{fontSize : '12pt'}}>{degree} {major !== '' ? `in ${major}` : ''}</Text>
                                                     </View>
                                                 </View>
                                             )
@@ -276,7 +276,7 @@ class General extends Component {
                                             return (
                                                 <View key={key} style={[styles.othersInsideTextContainer,{flexDirection : 'column', marginBottom : 2}]}>
                                                     <View style={{flexDirection : 'row'}}>
-                                                        <Text style={{fontSize : '14pt'}}>{key_skill_name}</Text>
+                                                        <Text style={{fontSize : '12pt'}}>{key_skill_name}</Text>
                                                     </View>
                                                 </View>
                                             )
@@ -368,7 +368,7 @@ class General extends Component {
                                             return (
                                                 <View wrap={false} key={key} style={[styles.othersInsideTextContainer,{flexDirection : 'column', marginTop : '10pt'}]}>
                                                     <View style={{flexDirection : 'row'}}>
-                                                        <Text style={{fontSize : '14pt'}}>{communication_skill}</Text>
+                                                        <Text style={{fontSize : '12pt'}}>{communication_skill}</Text>
                                                     </View>
                                                 </View>
                                             )
@@ -395,7 +395,7 @@ class General extends Component {
                                                 <View wrap={false} key={key} style={[styles.othersInsideTextContainer,{marginTop : 10}]}>
                                                     <View style={{flexGrow : 1, flexShrink : 0, flex : 0}}>
                                                         <Text style={{fontSize : '14pt'}}>{project_name} ({link_project})</Text>
-                                                        <Text style={{fontSize : '14pt', marginLeft : 15}}>• {project_description}</Text>
+                                                        <Text style={{fontSize : '12pt', marginLeft : 15}}>• {project_description}</Text>
                                                     </View>
                                                 </View>
                                             )
@@ -418,7 +418,7 @@ class General extends Component {
                                                         {
                                                             award_description &&
                                                             award_description.map( info => <View style={{marginLeft : 15}}>
-                                                                <Text style={{fontSize : '14pt'}} key={info.id}>• {info.value}</Text>
+                                                                <Text style={{fontSize : '12pt'}} key={info.id}>• {info.value}</Text>
                                                             </View>)
                                                         }
                                                     </View>
@@ -428,7 +428,7 @@ class General extends Component {
                                     }
                                 </View>
                             </View>
-                            <View style={{width : '100%',padding : 15, borderTopWidth : 1, borderTopColor : '#647C64'}}>
+                            <View wrap={false} style={{width : '100%',padding : 15, borderTopWidth : 1, borderTopColor : '#647C64'}}>
                                 <Text style={styles.generalProfileTitle}>{other_section_header || 'Other Information'}</Text>
                                 <View>
                                     {
@@ -442,7 +442,7 @@ class General extends Component {
                                                         {
                                                             information_summary &&
                                                             information_summary.map( info => <View style={{marginLeft : 15}}>
-                                                                <Text style={{fontSize : '14pt'}} key={info.id}>• {info.value}</Text>
+                                                                <Text style={{fontSize : '12pt'}} key={info.id}>• {info.value}</Text>
                                                             </View>)
                                                         }
                                                     </View>
@@ -455,7 +455,7 @@ class General extends Component {
                         </View>
                     </View>
                     <View style={[styles.body,{width : '100%', flexWrap : 'wrap', flexDirection : 'row', height : 10, paddingTop : 5, paddingBottom : 5, paddingLeft : 15}]}>
-                          <Text style={{textAlign: 'left', flex : 1, fontSize : '14pt'}}>Character References are available upon request.</Text>
+                          <Text style={{textAlign: 'left', flex : 1, fontSize : '12pt'}}>Character References are available upon request.</Text>
                     </View>
                 </Page>
             </Document>
